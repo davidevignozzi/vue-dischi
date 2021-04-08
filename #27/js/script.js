@@ -31,7 +31,9 @@ var app = new Vue({
 
     },
 
+
     mounted(){
+        // chiamata ajax all'API
         axios
         .get("https://flynn.boolean.careers/exercises/api/array/music")
         .then((resp) => {
@@ -41,6 +43,7 @@ var app = new Vue({
     },
 
     computed: {
+    // filtro per anno comparando uno ad uno gli element.year
         sortedYear: function() {
           function compare(a, b) {
             if (a.year < b.year)
