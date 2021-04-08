@@ -40,5 +40,18 @@ var app = new Vue({
         });
     },
 
+    computed: {
+        sortedYear: function() {
+          function compare(a, b) {
+            if (a.year < b.year)
+              return -1;
+            if (a.year > b.year)
+              return 1;
+            return 0;
+            }
+            return this.cds.sort(compare);
+        }
+    }
+
 })
 Vue.config.devtools = true

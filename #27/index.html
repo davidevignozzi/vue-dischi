@@ -37,7 +37,7 @@
 
         <div class="cds-container container">
             <!-- cds -->
-            <div class="cd" v-if="selected === element.genre || selected === 'All'" v-for="element in cds">
+            <div class="cd" v-if="selected === element.genre || selected === 'All'" v-for="(element, index) in sortedYear">
                 <img v-bind:src="element.poster" alt="">
                 <h3>{{element.title}}</h3>
                 <span class="author">{{element.author}}</span>
