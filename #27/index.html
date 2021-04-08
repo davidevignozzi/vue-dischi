@@ -24,9 +24,16 @@
     <!-- end header -->
 
     <!-- app-vue -->
-    <div class="app">
-
-        
+    <div id="app">
+        <div class="cds-container container">
+            <!-- dischi -->
+            <div class="cd" v-for="element in cds">
+                <img v-bind:src="element.poster" alt="">
+                <h3>{{element.title}}</h3>
+                <span class="author">{{element.author}}</span>
+                <span class="year">{{element.year}}</span>
+            </div>
+        </div>
     </div>
     <!-- end app-vue -->
 

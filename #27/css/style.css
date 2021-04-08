@@ -28,3 +28,46 @@ header img {
     margin-top: 10px;
 }
 /* end header */
+
+/*  in #app */
+.cds-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+/*  single cd */
+.cd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 200px;
+    padding: 20px;
+    margin: 10px 20px;
+    height: 360px;
+    background: #2E3A46;
+    text-align: center;
+}
+.cd:hover{
+    cursor: pointer;
+    background: #1f2933;
+}
+.cd img {
+    max-width: 100%;
+}
+.cd h3 {
+    margin: 20px 0;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.cd span.author {
+    color: grey;
+    font-size: 20px;
+}
+.cd span.year {
+    color: grey;
+}
+/*  end in #app */
