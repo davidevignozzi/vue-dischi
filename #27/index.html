@@ -25,9 +25,19 @@
 
     <!-- app-vue -->
     <div id="app">
+
+        <!-- select -->
+        <div class="selected">
+            <select name="filter" v-model="selected">
+                <option value="All">All</option>
+                <option v-for="option in genreList" v-bind:value="option">{{option}}</option>
+            </select>
+        </div>
+        <!-- end select -->
+
         <div class="cds-container container">
-            <!-- dischi -->
-            <div class="cd" v-for="element in cds">
+            <!-- cds -->
+            <div class="cd" v-if="selected === element.genre || selected === 'All'" v-for="element in cds">
                 <img v-bind:src="element.poster" alt="">
                 <h3>{{element.title}}</h3>
                 <span class="author">{{element.author}}</span>

@@ -35,7 +35,7 @@ header img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 100px 0;
+    padding: 25px 0;
 }
 /*  single cd */
 .cd {
@@ -70,4 +70,13 @@ header img {
 .cd span.year {
     color: grey;
 }
+/* end single cd */
+
+/* select */
+.selected{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+/* end select */
 /*  end in #app */
