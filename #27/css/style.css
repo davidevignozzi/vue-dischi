@@ -78,5 +78,13 @@ header img {
     justify-content: center;
     padding: 50px 0;
 }
+.selected select{
+    background: #2E3A46;
+    color: white;
+    padding: 5px 25px;
+}
+.selected label{
+    position: absolute;
+}
 /* end select */
 /*  end in #app */
